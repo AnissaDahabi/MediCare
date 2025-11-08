@@ -6,7 +6,7 @@
         {
             $url = "mysql:host=mysql-medicare.alwaysdata.net;dbname=medicare_db;charset=utf8mb4";
             $user = "medicare";
-            $mdp = "Anissa1624!!";
+            $mdp = "";
 
             try {
                 $this->unPdo = new PDO($url, $user, $mdp);
