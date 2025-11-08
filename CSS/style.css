@@ -1,0 +1,375 @@
+:root {
+    --text: #30365A;
+    --blue: #D6E8F7;
+    --prompt: #676C90;
+    --button: #5882AE;
+    --hover: #345B83;
+    --white: #FFF;
+}
+
+* {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 70px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .logo img {
+    height: 60px;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-center a {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.05em;
+    padding-bottom: 3px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-center a:hover {
+    color: var(--hover);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: var(--button);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--hover);
+}
+
+/* ---------- LANDING PAGE ---------- */
+.landing-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+}
+
+.landing-container .popup {
+    background-color: var(--blue);
+    border-radius: 20px;
+    width: 400px;
+    min-height: 300px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.popup h3 {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.popup p {
+    font-size: 1rem;
+    color: var(--text);
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* ---------- PAGE DE CONNEXION---------- */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px);
+}
+
+form.popup {
+    background-color: var(--blue);
+    border-radius: 20px;
+    min-width: 400px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+form.popup table {
+    width: 100%;
+}
+
+form.popup td {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+form.popup input[type="text"],
+form.popup input[type="password"] {
+    width: 100%;
+    padding: 8px 15px;
+    outline: none;
+    color: var(--prompt);
+    font-weight: 500;
+    border: none;
+    border-radius: 100px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+form.popup input[type="submit"],
+form.popup input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+
+/* ---------- PAGE D'ACCUEIL ---------- */
+h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0.2em 0 20px 0;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.home-container img {
+    border-radius: 10px;
+}
+
+
+/* ---------- GESTION DES PATIENTS ---------- */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-form .search-box {
+    width: 250px !important;
+    padding: 8px 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--blue);
+    color: var(--text);
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.search-form .button {
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--button);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form .button:hover {
+    background-color: var(--hover);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+table {
+    width: 400px;
+}
+
+td {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: var(--blue);
+    color: var(--text);
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.form-buttons .button {
+    flex: 1;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--button);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-buttons .button:hover {
+    background-color: var(--hover);
+}
+
+.table-container table {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.table-container th, .table-container td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: var(--blue);
+    color: var(--text);
+    font-weight: bold;
+    border-bottom: 2px solid var(--button);
+}
+
+.table-container td {
+    background-color: #f9faff;
+    color: var(--text);
+    border-bottom: 1px solid #d6e8f7;
+}
+
+.table-container tr:nth-child(even) td {
+    background-color: #e6f0fa;
+}
+
+.table-container tr:hover td {
+    background-color: #d6e8f7;
+}
+
+.table-container a img {
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.table-container a img:hover {
+    transform: scale(1.1);
+}
+
+.table-container td:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.table-container td:last-child a {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    color: var(--text);
+    font-weight: 500;
+    bottom: 0;
+}
