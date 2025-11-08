@@ -1,7 +1,6 @@
 # MedicalCare
 
-[![PHP](https://img.shields.io/badge/PHP-8.1-blue.svg)](https://www.php.net/)  
-[![MySQL](https://img.shields.io/badge/MySQL-8.0-blue.svg)](https://www.mysql.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.1-blue.svg)](https://www.php.net/)  [![MySQL](https://img.shields.io/badge/MySQL-8.0-blue.svg)](https://www.mysql.com/)
 
 MedicalCare est une application web de gestion médicale permettant aux utilisateurs d’accéder aux informations médicales et aux administrateurs de gérer entièrement le système (patients, médecins, consultations, prescriptions…).
 
