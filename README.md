@@ -57,6 +57,6 @@ MedicalCare est conçu pour simplifier la gestion médicale via une interface si
 ## Utilisation
 
 Vous pouvez vous connecter et consulter le site à l'aide des identifiants suivants:
-Email : guest@gmail.com
-Mot de passe : 123
+- Email : guest@gmail.com
+- Mot de passe : 123
 
