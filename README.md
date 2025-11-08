@@ -13,7 +13,8 @@ MedicalCare est une application web de gestion médicale permettant aux utilisat
 - [Fonctionnalités](#fonctionnalités)  
 - [Technologies utilisées](#technologies-utilisées)  
 - [Structure du projet](#structure-du-projet)
-- [Utilisation](#utilisation)  
+- [Utilisation](#utilisation)
+- [Screenshots](#screenshots)  
   
 
 ---
@@ -58,4 +59,10 @@ MedicalCare est conçu pour simplifier la gestion médicale via une interface si
 Vous pouvez vous connecter et consulter le site à l'aide des identifiants suivants:
 - Email : guest@gmail.com
 - Mot de passe : 123
+
+---
+
+## Aperçu de la vue Admin
+![Insert Patient](Images/screenshot1.png)
+
 
