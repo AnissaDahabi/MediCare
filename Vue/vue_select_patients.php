@@ -32,6 +32,10 @@
             </tr>
         <?php endforeach; ?>
     </table>
+    <?php
+    echo "</br> Nombre de patients: ".count($lesPatients)." Patients </br>" ;
+    ?>
+
 </div>
     <footer>
         <p>&copy; 2025 MediCare - Tous droits réservés</p>

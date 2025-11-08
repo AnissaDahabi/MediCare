@@ -19,9 +19,8 @@
 
         /**** Gestion des patients ***/
         public function insertPatient($tab){
-            $requete = "INSERT INTO Patient VALUES (null, :nom, :prenom, :adresse, :email, :tel, :role);";
-            $donnees = array(":nom"=>$tab['nom'], ":prenom"=>$tab['prenom'], ":adresse"=>$tab['adresse'], ":email"=>$tab['email'], ":tel"=>$tab['tel'], ":role"=>$tab['role']
-                );
+            $requete = "INSERT INTO Patient VALUES (null, :nom, :prenom, :adresse, :email, :tel);";
+            $donnees = array(":nom"=>$tab['nom'], ":prenom"=>$tab['prenom'], ":adresse"=>$tab['adresse'], ":email"=>$tab['email'], ":tel"=>$tab['tel']);
             $exec = $this->unPdo->prepare($requete);
             $exec->execute($donnees);
         }
