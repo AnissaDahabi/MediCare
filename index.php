@@ -8,7 +8,7 @@ $unControleur = new Controleur();
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>MedicalCare</title>
+    <title>MediCare</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>

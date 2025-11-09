@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS CareDb;
-CREATE DATABASE CareDb;
-USE CareDb;
+DROP DATABASE IF EXISTS medicare_db;
+CREATE DATABASE medicare_db;
+USE medicare_db;
 
 CREATE TABLE Patient (
                          idpatient INT(5) NOT NULL AUTO_INCREMENT,
@@ -61,27 +61,3 @@ CREATE TABLE User (
                       role ENUM('admin', 'user') NOT NULL,
                       PRIMARY KEY (iduser)
 );
-
-INSERT INTO Patient (nom, prenom, email, adresse, tel)
-VALUES
-    ('Dupont','Marie','marie.dupont@gmail.com','12 rue Victor Hugo, Paris','0601020304'),
-    ('Martin','Lucas','lucas.martin@gmail.com','25 avenue de la République, Lyon','0605060708');
-
-INSERT INTO Medecin (nom, prenom, email, tel, specialite)
-VALUES
-    ('Durand','Sophie','sophie.durand@hopital.fr','0612345678','Cardiologue'),
-    ('Leclerc','Antoine','antoine.leclerc@hopital.fr','0698765432','Généraliste');
-
-INSERT INTO Prescription (date_pres, prescription, idpatient, idmedecin)
-VALUES
-    ('2025-11-07','Prendre 1 comprimé de paracétamol 3 fois par jour.',1,2);
-
-INSERT INTO Consultation (prix, idpatient, idmedecin)
-VALUES
-    (50.00, 1, 2);
-
-INSERT INTO Horaire (idconsult, debut, fin)
-VALUES
-    (1,'2025-11-08 10:00:00','2025-11-08 10:30:00'),
-    (1,'2025-11-09 10:00:00','2025-11-09 10:30:00'),
-    (1,'2025-11-10 10:00:00','2025-11-10 10:30:00');

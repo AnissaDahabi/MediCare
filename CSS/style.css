@@ -166,7 +166,7 @@ h3 {
 }
 
 
-/* ---------- GESTION DES PATIENTS ---------- */
+/* ---------- FORMULAIRES ---------- */
 .search-form {
     display: flex;
     justify-content: center;
@@ -226,7 +226,7 @@ h3 {
 }
 
 table {
-    width: 400px;
+    min-width: 400px;
 }
 
 td {
@@ -237,7 +237,15 @@ td {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+select {
+    -webkit-appearance: none;  /* Chrome/Safari */
+    -moz-appearance: none;     /* Firefox */
+    appearance: none;          /* Standard */
     width: 100%;
     padding: 10px 15px;
     border-radius: 50px;
@@ -247,6 +255,19 @@ input[type="tel"] {
     color: var(--text);
     font-weight: 500;
     box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 10px; /* border-radius spécifique pour textarea */
+    border: none;
+    outline: none;
+    background-color: var(--blue);
+    color: var(--text);
+    font-weight: 500;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
 .form-buttons {
@@ -273,6 +294,7 @@ input[type="tel"] {
     background-color: var(--hover);
 }
 
+/* ---------- TABLEAUX ---------- */
 .table-container table {
     width: 90%;
     margin: 0 auto 20px auto;
