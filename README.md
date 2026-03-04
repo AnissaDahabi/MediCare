@@ -12,10 +12,7 @@ MedicalCare est une application web de gestion médicale permettant aux utilisat
 - [Rôles et permissions](#rôles-et-permissions)  
 - [Fonctionnalités](#fonctionnalités)  
 - [Technologies utilisées](#technologies-utilisées)  
-- [Structure du projet](#structure-du-projet)
-- [Utilisation](#utilisation)
-- [Screenshots](#screenshots)  
-  
+- [Utilisation](#utilisation)  
 
 ---
 
